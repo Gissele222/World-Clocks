@@ -2,39 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, 
-    initial-scale=1.0"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>Clocks Around The World</title>
   </head>
   <body>
     <div class="container">
       <h1>World Clocks</h1>
 
-      <select>
+      <select id="city">
         <option value="">Select a city..</option>
-        <option value="">San Diego</option>
-        <option value="">Miami</option>
-        <option value="">Chicago</option>
-        <option value="">New York</option>
+        <option value="current">My current location</option>
+        <option value="America/Los_Angeles">Los Angeles</option>
+        <option value="America/New_York">New York</option>
+        <option value="Europe/London">London</option>
       </select>
 
-      <div class="city">
+      <div class="city" id="los-angeles">
         <div>
           <h2>Los Angeles</h2>
-          <div class="date">February 6th 2024</div>
+          <div class="date"></div>
         </div>
-        <div class="time">8:19pm</div>
+        <div class="time"></div>
       </div>
-      <div class="city">
+      <div class="city" id="new-york">
         <div>
-          <h2>Miami</h2>
-          <div class="date">February 7th 2024</div>
+          <h2>New York</h2>
+          <div class="date"></div>
         </div>
-        <div class="time">11:30pm</div>
+        <div class="time"></div>
       </div>
     </div>
 
